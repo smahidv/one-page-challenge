@@ -1,4 +1,32 @@
 /* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btn-gradient {
+    @apply text-white font-bold px-6 py-3 rounded-lg whitespace-nowrap;
+    background: linear-gradient(90deg, #16A34A, #0B6B3A);
+  }
+}
+
+@layer components {
+  .btn-gradient {
+    @apply  px-5 py-2.5 flex gap-2 rounded-lg border-none cursor-pointer transition;
+    background: linear-gradient(90deg, #16A34A 0%, #0B6B3A 100%);
+  }
+
+  .btn-gradient:hover {
+    @apply opacity-90;
+  }
+  h3{
+    @apply font-bold text-textDark text-3xl lg:text-4xl  
+  }
+}
+
+
+.select {
+	border: 2px solid red;
+}
+

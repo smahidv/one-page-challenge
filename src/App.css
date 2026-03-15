@@ -1,0 +1,90 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+html,
+body {
+	overflow-x: hidden;
+	font-family: "Poppins", sans-serif;
+	width: 100%;
+	max-width: 100%;
+}
+
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-wrap: balance;
+}
+
+p,
+li {
+	text-wrap: pretty;
+	overflow-wrap: break-word;
+}
+img {
+	display: block;
+	max-width: 100%;
+}
+
+
+
+.hero-bg {
+	background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 50%, #fef2f2 100%);
+}
+
+.h2green {
+	display: flex;
+	gap: 8px;
+	justify-content: center;
+	align-items: center;
+	background-color: #dcfce7;
+	border-radius: 9999px;
+	padding: 4px 12px;
+	width: fit-content;
+	margin-bottom: 17px;
+}
+
+.h2green span {
+	font-size: 14px;
+	font-weight: 500;
+	color: #0b6b3a;
+}
+
+.bg-grayGradient{
+	background: linear-gradient(180deg, #FFFFFF 0%, #F5F5F5 100%);
+
+}
+.bg-redGradient{
+	background: linear-gradient(90deg, #DC2626 0%, #B01219 100%);
+
+}
+
+.shadowBorder{
+	box-shadow: 0px 2px 4px -2px #0000001A;
+
+
+}
+
+.bgGreenGradient{
+	background: linear-gradient(90deg, #16A34A 0%, #0B6B3A 100%);
+
+
+}
+.blur-bg {
+  backdrop-filter: blur(8px);
+}
