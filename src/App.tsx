@@ -61,7 +61,7 @@ export default function App() {
 								Codes QR, cartes digitales, défis et récompenses.
 							</span>{" "}
 						</p>
-						<div className="py-8 grid grid-cols-3 justify-center lg:justify-start gap-8">
+						<div className="py-8 grid grid-cols-3 max-w-[600px] justify-center lg:justify-start gap-8">
 							<div className="text-center lg:text-left">
 								<div className="font-bold text-secondary text-2xl lg:text-4xl">
 									500K+
