@@ -37,6 +37,7 @@ export default function App() {
 				<Navigation />
 			</header>
 			<main>
+				{/* Hero Section */}
 				<section className=" hero-bg  lg:flex lg:justify-center gap-8 p-5  lg:py-[127px] lg:px-[96px]">
 					<div className="max-w-[1247.99px]  ">
 						<h1 className="text-center lg:text-left font-bold text-4xl pt-10 pb-4 lg:pb-[32px] leading-9 lg:text-7xl text-textDark">
@@ -87,8 +88,8 @@ export default function App() {
 								</div>
 							</div>
 						</div>
-						<div className="flex gap-4 justify-center items-center lg:justify-start pb-8 lg:pb-12">
-							<button className="btn-gradient px-6 py-3 ">
+						<div className="sm:flex   gap-4 justify-center items-center lg:justify-start pb-8 lg:pb-12">
+							<button className="btn-gradient px-6 py-3 w-full mb-2 sm:mb-0">
 								{" "}
 								<span className="text-sm font-medium text-white">
 									Voir la démo
@@ -99,7 +100,7 @@ export default function App() {
 									className="w-[4.67px]"
 								/>
 							</button>
-							<button className="border-[#CBD5E1] border-2 lg:px-9 rounded-lg px-4 py-3  flex items-center gap-2 whitespace-nowrap">
+							<button className="border-[#CBD5E1] w-full border-2 lg:px-9 rounded-lg px-4 py-3  flex items-center gap-2 whitespace-nowrap">
 								<img src={Idea} alt="ideaIcon" />
 								<span className="text-sm font-medium text-textColor">
 									Comment ça marche
@@ -132,6 +133,7 @@ export default function App() {
 						className="w-[576px] pt-6 lg:pt-0"
 					/>
 				</section>
+				{/* sub hero*/}
 				<section className="bg-grayGradient lg:flex  lg:justify-center py-10 lg:py-20 px-5 lg:px-[96px] lg:gap-16">
 					<div className="max-w-[1247.99px] ">
 						<h2 className="h2green">
@@ -205,10 +207,11 @@ export default function App() {
 							<img src={plan} alt="plan icon" />
 						</button>
 					</div>
-					<div className="lg:px-[72px] lg:-order-1">
+					<div className="lg:px-[72px] lg:-order-1 max-w-[50%]">
 						<img src={Football} className="lg:-order-1 lg:w-[448px] min-w-[300px] max-w-full lg:max-w-[448px]" />
 					</div>
 				</section>
+				{/* parcours */}
 				<section className="lg:py-20 lg:px-[96px] px-4 py-10 text-center r">
 					<div className=" ">
 						<h3>Un parcours client simple et engageant</h3>
@@ -238,6 +241,7 @@ export default function App() {
 						</div>
 					</div>
 				</section>
+				{/* solution */}
 				<section className="bgGreenGradient py-10 lg:py-20 px-5 lg:px-[96px] text-center lg:flex lg:justify-center ">
 					<div className="max-w-[1247.99px]">
 						<h3 className="text-white">
@@ -265,6 +269,7 @@ export default function App() {
 						</div>
 					</div>
 				</section>
+				{/* backoffice */}
 				<section className="bg-grayGradient py-10 lg:py-20 px-5 lg:px-[96px] text-center lg:flex  lg:justify-center">
 					<div className="max-w-[1247.99px]">
 						<h2 className="h2green w-fit mx-auto ">
@@ -300,6 +305,7 @@ export default function App() {
 						</button>
 					</div>
 				</section>
+				{/* avantages */}
 				<section>
 					<div className="p-12 grid grid-cols-2 lg:grid-cols-5 gap-6 justify-center items-center text-center align-items-center">
 						{avantages.map((item, index) => (
@@ -315,6 +321,7 @@ export default function App() {
 						))}
 					</div>
 				</section>
+				{/* catalogue */}
 				<div className="bg-grayLightGradient">
 					<section className=" py-10 lg:py-20 px-5 lg:px-[96px] grid justify-center items-center text-center">
 						<h3 className="pb-4">Des formules adaptées à votre échelle</h3>
@@ -383,11 +390,11 @@ export default function App() {
 									key={index}
 									className="relative border-[#E2E8F0] border rounded-2xl max-w-[876px] "
 								>
-									<div className="bgGreenGradient pb-1 pt-0 px-3 absolute top-0 right-0 rounded-bl-xl rounded-tr-2xl ">
+									{item.status && <div className={`${item.status === "star" ? "bgGreenGradient" : "bg-[#475569]"} pb-1 pt-0 px-3 absolute top-0 right-0 rounded-bl-xl rounded-tr-2xl` }>
 										<span className="text-white text-xs font-semibold">
 											{item.status}
 										</span>
-									</div>
+									</div>}
 									<img
 										className="rounded-2xl"
 										src={item.url}
@@ -434,6 +441,7 @@ export default function App() {
 						))}
 					</div>
 				</section>
+				{/* call to action */}
 				<section className="bg-redGradient ">
 					<div className="py-10 lg:py-20 px-4 lg:px-[96px] w-fit mx-auto text-center">
 						<h3 className="text-white">Prêt à transformer votre marketing ?</h3>
