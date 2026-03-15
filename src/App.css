@@ -69,6 +69,10 @@ img {
 	background: linear-gradient(180deg, #FFFFFF 0%, #F5F5F5 100%);
 
 }
+.bg-grayLightGradient{
+	background: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%);
+
+}
 .bg-redGradient{
 	background: linear-gradient(90deg, #DC2626 0%, #B01219 100%);
 
@@ -79,6 +83,14 @@ img {
 
 
 }
+
+.shadowPopular{
+box-shadow: 0px 20px 25px -5px #0000001A;
+}
+
+
+
+
 
 .bgGreenGradient{
 	background: linear-gradient(90deg, #16A34A 0%, #0B6B3A 100%);

@@ -21,12 +21,9 @@
     @apply opacity-90;
   }
   h3{
-    @apply font-bold text-textDark text-3xl lg:text-4xl  
+    @apply font-bold text-textDark text-2xl lg:text-4xl  
   }
 }
 
 
-.select {
-	border: 2px solid red;
-}
 

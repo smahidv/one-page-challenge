@@ -19,11 +19,14 @@ import support from "./assets/icons/support.svg"
 import facebook from "./assets/icons/facebook.svg"
 import x from "./assets/icons/x.svg"
 import insta from "./assets/icons/insta.svg"
-import linkedin from "./assets/icons/insta.svg"
+import linkedin from "./assets/icons/linkedin.png"
 import TombolaDigitale from "./assets/images/TombolaDigitale.png"
 import QuizFootball from "./assets/images/QuizFootball.png"
 import AlbumDigitale from "./assets/images/AlbumDigitale.png"
 import Pronostics from "./assets/images/Pronostics.png"
+import redgift from "./assets/icons/redgift.svg"
+import powergreen from "./assets/icons/powergreen.svg"
+import upgreen from "./assets/icons/upgreen.svg"
 
 export  const menuItems = [
     { name: "Nos offres", to: "#" },
@@ -36,8 +39,8 @@ export const steps =[
   {icon:shop,title: "Achat produit",content:"Le client achète votre produiten magasin" },
   {icon:QR,title: "Scan QR Code",content:"Il scanne le code sur l'emballage" },
   {icon:collection,title: "Déblocage carte",content:"Une carte digitale est débloquée" },
-  {icon:puzzle,title: "Collection",content:"Il complète sa collection" },
-  {icon:gift,title: "Récompenses",content:"Participe aux tirages" },
+  {icon:puzzle,title: "Collection",content:"Il complète sa collection",red:true },
+  {icon:redgift,title: "Récompenses",content:"Participe aux tirages",red:true },
 
 ]
 
@@ -68,7 +71,7 @@ export const avantages = [
 ]
 
 export const solutions = [
-  {icon:power,title1: "Starter",title2:"Campagne locale",desri:"Idéal pour tester sur un marché",list:["Jusqu'à 1 000 utilisateurs","Jusqu'à 10K QR codes","1 pays / région","Album standard (équipe nationale)","Hébergement Cloud sécurisé","Backoffice simplifié","Support par email","1 marque"],btn:"Demander un devis" },
+  {icon:powergreen,title1: "Starter",title2:"Campagne locale",desri:"Idéal pour tester sur un marché",list:["Jusqu'à 1 000 utilisateurs","Jusqu'à 10K QR codes","1 pays / région","Album standard (équipe nationale)","Hébergement Cloud sécurisé","Backoffice simplifié","Support par email","1 marque"],btn:"Demander un devis" },
   {icon:up,title1: "Scale",title2:"Expansion nationale",desri:"Pour des campagnes d'envergure",list:["Jusqu'à 50 000 utilisateurs","QR codes illimités","Multi-pays (jusqu'à 5)","Album complet (toutes les équipes)","Cloud ou On-Premise","Backoffice avancé avec analytics","Support prioritaire 24/7","Jusqu'à 3 marques","API REST disponible"],btn:"Planifier une démo",ispopulaire:true },
   {icon:global,title1: "Enterprise",title2:"Solution globale",desri:"Pour les groupes internationaux",list:["Utilisateurs illimités","QR codes illimités","Déploiement mondial","Albums personnalisés par région","Infrastructure dédiée (On-Premise)","Multi-marques illimité","Développements sur-mesure","Account manager dédié","SLA garanti 99.9%","Formation et onboarding complet"],btn:"Contactez-nous" },
 
@@ -85,7 +88,7 @@ export const catalogue=[
 ]
 
 export const features =[
-  {icon:up,title:"500K+",description:"Interactions mensuelles"},
+  {icon:upgreen,title:"500K+",description:"Interactions mensuelles"},
   {icon:users,title:"50+",description:"Marques partenaires"},
   {icon:star,title:"98%",description:"Taux de satisfaction"},
   {icon:support,title:"24/7",description:"Support technique"},
