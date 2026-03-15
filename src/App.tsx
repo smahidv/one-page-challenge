@@ -89,7 +89,7 @@ export default function App() {
 							</div>
 						</div>
 						<div className="sm:flex   gap-4 justify-center items-center lg:justify-start pb-8 lg:pb-12">
-							<button className="btn-gradient px-6 py-3 w-full mb-2 sm:mb-0">
+							<button className="btn-gradient px-6 py-3 w-full lg:w-auto mb-2 sm:mb-0">
 								{" "}
 								<span className="text-sm font-medium text-white">
 									Voir la démo
@@ -100,7 +100,7 @@ export default function App() {
 									className="w-[4.67px]"
 								/>
 							</button>
-							<button className="border-[#CBD5E1] w-full border-2 lg:px-9 rounded-lg px-4 py-3  flex items-center gap-2 whitespace-nowrap">
+							<button className="border-[#CBD5E1] w-full  lg:w-auto  border-2 lg:px-9 rounded-lg px-4 py-3  flex items-center gap-2 whitespace-nowrap">
 								<img src={Idea} alt="ideaIcon" />
 								<span className="text-sm font-medium text-textColor">
 									Comment ça marche
