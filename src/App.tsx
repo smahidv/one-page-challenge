@@ -88,7 +88,7 @@ export default function App() {
 								</div>
 							</div>
 						</div>
-						<div className="flex flex-col sm:flex   gap-4 justify-center items-center lg:justify-start pb-8 lg:pb-12">
+						<div className="flex flex-col sm:flex-row   gap-4 justify-center items-center lg:justify-start pb-8 lg:pb-12">
 							<button className="btn-gradient px-6 py-3 ">
 								{" "}
 								<span className="text-sm font-medium text-white">
